@@ -24,7 +24,7 @@ jobs:
           git-release-bot-name: "Release Workflow"
           git-release-bot-email: "admin@danubetech.com"
 
-          access-token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+          access-token: ${{ secrets.GITHUB_TOKEN }}
 
           maven-repo-server-id: danubetech-maven-releases
           maven-repo-server-username: ${{ secrets.MAVEN_USERNAME }}
