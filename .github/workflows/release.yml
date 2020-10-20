@@ -20,6 +20,10 @@ jobs:
       - uses: actions/checkout@master
         with:
           ref: ${{ env.RELEASE_BRANCH }}
+      - name: Configure Git user
+        run: |
+          git config user.email "admin@danubetech.com"
+          git config user.name "Release Workflow"
       - name: Run maven release action
         uses: danubetech/github-action-maven-release@master
         with:
