@@ -27,7 +27,7 @@ jobs:
       - name: Run maven release action
         uses: danubetech/github-action-maven-release@master
         with:
-          server_id: danubetech-maven-release
+          server_id: danubetech-maven-releases
           release_version: ${{ env.RELEASE_VERSION }}
           development_version: ${{ env.DEVELOPMENT_VERSION }}
           tag: ${{ env.TAG }}
